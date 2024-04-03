@@ -1,0 +1,37 @@
+img{
+    width: 250px;
+    
+}
+div#ootd dt{
+color: red;
+text-decoration: underline;
+}
+dd{
+    color: black;
+}
+dt{
+    font-weight: bold;
+}
+div{
+    vertical-align: top;
+    display: inline-block;
+    border-top: solid 10px gray;
+    border-left: solid 10px gray;
+    border-right: solid 10px black;
+    border-bottom: solid 10px black;
+
+
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+}
+div.contents{
+    background-color: yellow !important;
+}
+div#ootd{
+    background-color: aqua;
+    
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
