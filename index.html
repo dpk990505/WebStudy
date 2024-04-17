@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹 스터디 ::: </title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <h1>웹 화면 구현 수업의 웹 스터디 페이지</h1>
     <h2>노형래</h2>
@@ -18,11 +22,13 @@
     <div class="contents">
         <dl>
             <dt>영화소개</dt>
-            
-            <dd><a target="_blank" href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EB%AC%98_(2024%EB%85%84_%EC%98%81%ED%99%94)">
-            <img src="https://filesvr.dureraum.org/cinema/rbs/data/files/mcontents/1/202403061451570.jpg"></a><br>
-            《파묘》는 2024년 개봉한 대한민국의 오컬트 미스터리 영화이다. 
-                장재현 감독이 각본과 감독을 맡고 최민식, 김고은, 유해진, 이도현이 주연을 맡은 
+
+            <dd><a target="_blank"
+                    href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EB%AC%98_(2024%EB%85%84_%EC%98%81%ED%99%94)">
+                    <img
+                        src="https://filesvr.dureraum.org/cinema/rbs/data/files/mcontents/1/202403061451570.jpg"></a><br>
+                《파묘》는 2024년 개봉한 대한민국의 오컬트 미스터리 영화이다.
+                장재현 감독이 각본과 감독을 맡고 최민식, 김고은, 유해진, 이도현이 주연을 맡은
                 2024년 대한민국 미스터리 스릴러 영화이다</dd>
 
         </dl>
@@ -52,7 +58,7 @@
             체크박스: <input type="chack_box" name="" id="">
             라디오버튼: <input type="radio" name="" id="">
             파일첨부: <input type="file" name="" id="">
-            <input type="butten"value="나는버튼입니다">
+            <input type="button" value="나는버튼입니다">
             <input type="img" src="./facebook.png" id="">
             히든은 보이지 않음<input type="hidden" name="" id="">
             날짜: <input type="date" name="" id="">
@@ -64,10 +70,114 @@
             색상선택: <input type="color" name="" id="">
             <input type="submit" value="로그인하기">
             <input type="reset" value="양식초기확">
-            <textarea name=""id="" cols="30" row10>
+            <textarea name="" id="" cols="30" row10>
                 하고싶은말을 하세요
             </textarea>
+            <select name="city" id="city">
+                <option value="강북구">강북구</option>
+                <option value="강남구">강남구</option>
+                <option value="서초구">서초구</option>
+                <option value="중원구">중원구</option>
+                <option value="분당구">분당구</option>
+            </select>
+            <select name="city" id="city">
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구">서초구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+            <fieldset>
+                <legend>좋아하는 과일</legend>
+                <input type="checkbox" id="banana" name="banana" value="banana">
+                <label for="banana">banana</label><br>
+                <input type="checkbox" id="apple" name="apple" value="apple">
+                <label for="apple">apple</label><br>
+                <input type="checkbox" id="orange" name="orange" value="orange" checked>
+                <label for="orange">orange</label><br>
+            </fieldset>
         </form>
     </div>
+
+    <table style="border: 1px solid gray; text-align: center;">
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+            <th>비고</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1</td>
+            <td>1,500</td>
+            <td rowspan="3">해당없음</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2</td>
+            <td rowspan="2">1,000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>합계</td>
+            <td colspan="4">6,500</td>
+        </tr>
+    </table>
+    <div style=" width: 600px; text-align: center;">
+        <table width="500px" ; border="2" cellspacing="3">
+            <caption style="color: rebeccapurple;">제품주문표</caption>
+            <col style="width: 10%;">
+            <colgroup span="3" style="width: 20%; font-style:italic; background-color:beige"></colgroup>
+            <col style="width: 30%;">
+            <tr>
+                <th scope="col">순번</th>
+                <th>품명</th>
+                <th>단가</th>
+                <th>수량</th>
+                <th>비고</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>새우깡</td>
+                    <td>1,300</td>
+                    <td>3</td>
+                    <td rowspan="3">해당없음</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>감자칩</td>
+                    <td>1,300</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>자갈치</td>
+                    <td>1,400</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>합계</td>
+                    <td colspan="4">000000원</td>
+                </tr>
+            </tfoot>
+
+            <video src="./src/video.mp4" controls></video>
+        </table>
+    </div>
 </body>
+
 </html>
